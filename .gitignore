@@ -1,0 +1,13 @@
+# data is not redistributed (see README for download instructions)
+data/raw/
+data/processed/
+
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# large generated audio/media (if any)
+*.mp3
+*.aiff
