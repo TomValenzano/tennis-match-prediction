@@ -153,7 +153,7 @@ def rolling_significance(df_all, first_test=2016, last_test=2025):
         done[y] = row
         pd.DataFrame.from_dict(done, orient="index").to_csv(per_season_path)
         print(f"  season {y} done")
-        return None  # one season per invocation (sandbox timeout); rerun to continue
+        return None  # one season per invocation, to keep runs short and resumable; rerun to continue
 
     # all seasons computed -> corrected paired t-tests
     tab = pd.DataFrame.from_dict(done, orient="index")
